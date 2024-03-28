@@ -1,0 +1,135 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Body Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title Styles */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #4e387e; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #f5f5f5; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover {
+  background-color: #e0e0e0; 
+}
+
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.stock-table th,
+.stock-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.stock-table th {
+  background-color: #f2f2f2; 
+}
+
+.green {
+  color: #4caf50; 
+}
+
+.red {
+  color: #f44336; 
+}
+
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 12px 24px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4e387e; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #563d8a; 
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+  
+  .dropdown,
+  .pagination button {
+    font-size: 14px;
+  }
+  
+  .stock-table th,
+  .stock-table td {
+    padding: 10px;
+  }
+}
